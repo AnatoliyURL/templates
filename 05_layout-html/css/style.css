@@ -1,0 +1,466 @@
+@font-face {
+  font-family: 'Muller Bold';
+  src: local('Muller Bold'), url("../fonts/MullerBold.woff") format('woff'),
+        url("../fonts/MullerBold.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: 'Muller Light';
+  src: local('Muller Light'), url("../fonts/MullerLight.woff") format('woff'),
+  url("../fonts/MullerLight.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: 'Muller Medium';
+  src: local('Muller Medium'), url("../fonts/MullerMedium.woff") format('woff'),
+  url("../fonts/MullerMedium.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: 'Muller Regular';
+  src: local('Muller Regular'), url("../fonts/MullerRegular.woff") format('woff'),
+  url("../fonts/MullerRegular.woff2") format('woff2');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 30px;
+}
+
+html {
+  font-family: 'MullerRegular', sans-serif;
+  background-color: #f1f1f1;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-container {
+  display: block;
+}
+
+.header-first-line {
+  display: flex;
+  align-items: center;
+}
+
+.left-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+}
+
+.href-tel {
+  font-size: 22px;
+  line-height: 32px;
+  color: #666666;
+  font-weight: bold;
+  font-family: "Muller Bold";
+  margin-left: 25px;
+}
+
+.personal-area {
+  background-image: url("../img/keyboard_tab.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-origin: border-box;
+  padding-left: 29px;
+  padding-top: 3px;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #cc9933;
+  font-family: Muller Regular;
+}
+
+.btn-search {
+  background: white url("../img/search.svg") no-repeat center;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+  width: 22px;
+  height: 22px;
+}
+
+.nav-search {
+  font-size: 14px;
+  line-height: 32px;
+  color: #bebebe;
+  font-family: "Muller Regular";
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  width: 300px;
+}
+
+.nav-link {
+  font-size: 16px;
+  line-height: 32px;
+  color: #333333;
+  font-family: "Muller Bold";
+}
+
+.nav {
+  display: flex;
+}
+
+.nav-list {
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-list-item:not(:last-child) {
+  margin-right: 45px;
+}
+
+.header-second-line {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 40px;
+  margin-top: 30px;
+  height: 70px;
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+
+.booking-special-offers, .services, .about, .benefits, .accommodation{
+  margin-top: 70px;
+}
+
+.heading {
+  margin-bottom: 30px;
+  margin-left: 43px;
+  font-size: 40px;
+  line-height: 32px;
+  color: #333333;
+  font-family: "Muller Regular";
+}
+
+.booking {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+
+.special-offers {
+  flex: 1 1 50%;
+}
+
+.booking-pull {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services-card {
+  flex: 1 1 48%;
+  width: 572px;
+  min-height: 325px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-origin: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 45px;
+  padding-bottom: 40px;
+  padding-right: 100px;
+}
+
+.services-card:not(:nth-child(2n)) {
+  margin-right: 25px;
+}
+
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.benefits-element {
+  margin-bottom: 25px;
+  flex: 1 1 20%;
+  width: 276px;
+  min-height: 276px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  background-repeat: no-repeat;
+  background-position: 44px 44px;
+  background-origin: border-box;
+}
+
+.benefits-element:not(:nth-child(4n)) {
+  margin-right: 25px;
+}
+
+.accommodation-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.accommodation-item {
+  margin-bottom: 25px;
+  flex: 1 1 30%;
+  width: 373px;
+  min-height: 441px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 44px;
+  padding-bottom: 45px;
+}
+
+.accommodation-item:not(:nth-child(3n)) {
+  margin-right: 25px;
+}
+
+.input-booking {
+  width: 518px;
+  height: 70px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: white;
+  margin-bottom: 27px;
+  padding-left: 21px;
+}
+
+.search-hr {
+  width: 159px;
+  height: 70px;
+  background-color: #cc9933;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+  line-height: 32px;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "Muller Bold";
+  text-align: center;
+}
+
+.text-clarification {
+  padding-left: 30px;
+  font-size: 16px;
+  line-height: 32px;
+  color: black;
+  font-family: "Muller Regular";
+}
+
+.text-clarification span {
+  color: #cc9933;
+}
+
+.special-offers-card {
+  width: 595px;
+  height: 540px;
+  background-image: url("../img/22@1X.jpeg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-origin: border-box;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex: 0 0 200px;
+}
+
+.special-offers-description {
+  font-size: 66px;
+  line-height: 58px;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "Muller Bold";
+  padding-left: 40px;
+  margin: 0;
+  max-width: 334px;
+  max-height: 166px;
+  white-space: pre-wrap;
+  margin-bottom: 43px;
+}
+
+.special-offers-prise {
+  font-size: 35px;
+  line-height: 32px;
+  color: #ffffff;
+  font-family: "Muller Regular";
+  opacity: 0.5;
+  padding-left: 40px;
+  margin: 0;
+}
+
+.special-offers-more {
+  font-size: 16px;
+  line-height: 32px;
+  color: #ffcc66;
+  font-family: "Muller Regular";
+  margin-left: 43px;
+  margin-bottom: 0;
+  margin-right: 0;
+  background-image: url("../img/pryamougolnik_2_kopiya_7_2225.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-origin: border-box;
+  padding-right: 10px;
+}
+
+.container-special-offers {
+  display: flex;
+  margin-bottom: 35px;
+}
+
+.main-text {
+  font-size: 16px;
+  line-height: 32px;
+  color: #333333;
+  font-family: "Muller Regular";
+  margin: 0;
+}
+
+.sc-text {
+  color: #333333;
+}
+
+.services-href {
+  font-size: 22px;
+  line-height: 32px;
+  color: #cc9933;
+  font-weight: 500;
+  font-family: "Muller Medium";
+  background-image: url("../img/pryamougolnik_2_kopiya_7_2225.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-origin: border-box;
+  padding-right: 20px;
+}
+
+.about-main-text {
+  width: 894px;
+  height: 180px;
+  white-space: pre-wrap;
+  margin-left: 43px;
+  color: #666666;
+}
+
+.be-text {
+  margin-top: 123px;
+  margin-left: 45px;
+  margin-right: 50px;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.accommodation-star {
+  width: 14px;
+  height: 13px;
+}
+
+.accommodation-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex: 1 1 50%;
+}
+
+.accommodation-price-rating {
+  display: flex;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #969696;
+  font-family: "Muller Regular";
+}
+
+.accommodation-price-rating strong{
+  font-size: 22px;
+  font-weight: 700;
+  color: #333333;
+}
+
+.accommodation-price {
+  margin: 0;
+  margin-right: auto;
+}
+
+.accommodation-stars {
+  display: flex;
+  margin-right: 45px;
+  margin-top: 9px;
+}
+
+.accommodation button {
+  width: 100px;
+  height: 41px;
+  border: 1px solid #cc9933;
+  border-radius: 12px;
+  background-color: white;
+  font-size: 16px;
+  line-height: 32px;
+  color: #cc9933;
+  font-weight: bold;
+  font-family: "Muller Bold";
+}
+
+.accommodation-country {
+  font-size: 16px;
+  line-height: 32px;
+  color: #969696;
+  font-family: "Muller Regular";
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.accommodation-more-href {
+  font-size: 22px;
+  line-height: 32px;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Muller Medium";
+  background-image: url("../img/pryamougolnik_2_kopiya_16_2600.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-origin: border-box;
+  padding-right: 20px;
+}
+
+.accommodation-more {
+  background-image: url("../img/41@1X.jpeg");
+  padding-left: 40px;
+}
